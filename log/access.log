@@ -1,2 +1,8 @@
 ::1 - - [11/Dec/2023:03:29:56 +0000] "GET / HTTP/1.1" 200 14 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
 ::1 - - [11/Dec/2023:03:29:56 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [11/Dec/2023:04:39:53 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [11/Dec/2023:04:39:55 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+::1 - - [11/Dec/2023:05:33:41 +0000] "GET /api/v1/products HTTP/1.1" 200 - "-" "PostmanRuntime/7.35.0"
+::1 - - [11/Dec/2023:05:34:57 +0000] "GET /api/v1/products HTTP/1.1" 200 51 "-" "PostmanRuntime/7.35.0"
+::1 - - [11/Dec/2023:05:35:50 +0000] "GET /api/v1/products HTTP/1.1" 200 51 "-" "PostmanRuntime/7.35.0"
+::1 - - [11/Dec/2023:05:37:39 +0000] "POST /api/v1/products HTTP/1.1" 201 382 "-" "PostmanRuntime/7.35.0"

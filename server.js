@@ -17,6 +17,10 @@ const hpp = require("hpp");
 const cors = require("cors");
 dotenv.config({ path: "./config/config.env" });
 connectDB();
+
+
+//// Routes filters
+const products =require("./routes/product");
 const app = express();
 // create a write stream (in append mode)
 var accessLogStream = rfs.createStream("access.log", {
@@ -61,6 +65,8 @@ app.use(morgan("combined", { stream: accessLogStream }));
 
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
+///// Mount routes
+app.use("/api/v1/products", products);
 app.use(errorHandler);
 app.use(logger);
 
