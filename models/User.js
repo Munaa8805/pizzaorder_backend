@@ -33,6 +33,13 @@ const UserSchema = new mongoose.Schema({
         maxlegth: 8,
         select: false,
     },
+    address: {
+        type: String,
+        trim: true,
+        required: [true, "Please add an address"],
+        maxlegth: 500,
+        minlength: 10,
+    },
     resetPasswordToken: String,
     resetPasswordExpire: Date,
     createdAt: {
