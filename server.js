@@ -21,6 +21,10 @@ connectDB();
 
 //// Routes filters
 const products =require("./routes/product");
+const users = require("./routes/user");
+const auth = require("./routes/auth");
+
+////
 const app = express();
 // create a write stream (in append mode)
 var accessLogStream = rfs.createStream("access.log", {
@@ -67,21 +71,14 @@ app.use(morgan("combined", { stream: accessLogStream }));
 app.use(express.static(path.join(__dirname, "public")));
 ///// Mount routes
 app.use("/api/v1/products", products);
+app.use("/api/v1/users", users);
+app.use("/api/v1/auth", auth);
 app.use(errorHandler);
 app.use(logger);
 
 const PORT = process.env.PORT || 8000;
 
-app.get("/", (req, res) => {
-    res.send("API is running");
-});
-app.get("/api/products", (req, res) => {
-    res.json(products);
-});
-app.get("/api/products/:id", (req, res) => {
-    const product = products.find((p) => p._id === req.params.id);
-    res.json(product);
-});
+
 
 const server = app.listen(PORT, () => {
     console.log(
