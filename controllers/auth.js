@@ -214,6 +214,7 @@ exports.resetPassword = asyncHandler(async (req, res, next) => {
 const sendTokenResponse = (user, statusCode, res) => {
     // Create token
     const token = user.getSignedJwtToken();
+    console.log(origUser);
 
     const options = {
         expires: new Date(
@@ -228,6 +229,7 @@ const sendTokenResponse = (user, statusCode, res) => {
 
     res.status(statusCode).cookie("token", token, options).json({
         success: true,
+        data: user,
         token,
     });
 };
