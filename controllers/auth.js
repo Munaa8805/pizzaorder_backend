@@ -86,6 +86,7 @@ exports.getMe = asyncHandler(async (req, res, next) => {
 // @route     PUT /api/v1/auth/updatedetails
 // @access    Private
 exports.updateDetails = asyncHandler(async (req, res, next) => {
+   console.log("req.user.id", req.user.id);
     const fieldsToUpdate = {
         name: req.body.name,
         email: req.body.email,
