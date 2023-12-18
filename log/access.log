@@ -61,3 +61,6 @@
 ::1 - - [18/Dec/2023:02:27:28 +0000] "PUT /api/v1/auth/updatedetails HTTP/1.1" 200 194 "-" "PostmanRuntime/7.35.0"
 ::1 - - [18/Dec/2023:02:28:49 +0000] "PUT /api/v1/auth/updatedetails HTTP/1.1" 200 195 "-" "PostmanRuntime/7.35.0"
 ::1 - - [18/Dec/2023:02:37:09 +0000] "PUT /api/v1/auth/updatedetails HTTP/1.1" 200 198 "-" "PostmanRuntime/7.35.0"
+::1 - - [18/Dec/2023:03:24:09 +0000] "PUT /api/v1/auth/updatedetails HTTP/1.1" 200 198 "-" "PostmanRuntime/7.35.0"
+::1 - - [18/Dec/2023:03:27:36 +0000] "PUT /api/v1/auth/updatedetails HTTP/1.1" 200 198 "-" "PostmanRuntime/7.35.0"
+::1 - - [18/Dec/2023:03:29:32 +0000] "PUT /api/v1/auth/updatedetails HTTP/1.1" 200 376 "-" "PostmanRuntime/7.35.0"
