@@ -11,6 +11,15 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
         data: products,
     });
 });
+
+exports.getProduct = asyncHandler(async (req, res, next) => {
+    const product = await Product.findById(req.params.id);
+    res.status(200).json({
+        success: true,
+        message: "Get product",
+        data: product,
+    });
+});
 exports.createProduct = async (req, res, next) => {
     // console.log(req.body);
 

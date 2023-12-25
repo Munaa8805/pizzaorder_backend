@@ -31,7 +31,12 @@ var accessLogStream = rfs.createStream("access.log", {
     interval: "1d", // rotate daily
     path: path.join(__dirname, "log"),
 });
-
+const corsOptions = {
+    origin: "*",
+    credentials: true,
+    allowHeaders: "Authorization, Content-Type, Set-Cookie",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+};
 //// Body parser
 app.use(express.json());
 app.use(cookieParser());
@@ -55,7 +60,7 @@ app.use(limiter);
 app.use(hpp());
 
 // Enable CORS
-app.use(cors());
+app.use(cors(corsOptions));
 
 // log only 4xx and 5xx responses to console
 app.use(

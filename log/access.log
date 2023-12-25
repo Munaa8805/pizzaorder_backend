@@ -64,3 +64,5 @@
 ::1 - - [18/Dec/2023:03:24:09 +0000] "PUT /api/v1/auth/updatedetails HTTP/1.1" 200 198 "-" "PostmanRuntime/7.35.0"
 ::1 - - [18/Dec/2023:03:27:36 +0000] "PUT /api/v1/auth/updatedetails HTTP/1.1" 200 198 "-" "PostmanRuntime/7.35.0"
 ::1 - - [18/Dec/2023:03:29:32 +0000] "PUT /api/v1/auth/updatedetails HTTP/1.1" 200 376 "-" "PostmanRuntime/7.35.0"
+::1 - - [25/Dec/2023:06:02:52 +0000] "GET /api/v1/products/:id HTTP/1.1" 404 46 "-" "PostmanRuntime/7.35.0"
+::1 - - [25/Dec/2023:06:03:07 +0000] "GET /api/v1/products/6576a02386501e54dceba319 HTTP/1.1" 200 379 "-" "PostmanRuntime/7.35.0"
